@@ -42,7 +42,7 @@ ALTER TABLE public.province_italiane_istat OWNER TO regione_calabria;
 -- Data for Name: province_italiane_istat; Type: TABLE DATA; Schema: public; Owner: regione_calabria
 --
 
-COPY province_italiane_istat (codice_ripartizione, codice_nuts1, "ripartizione_geografica_MAIUSCOLO", ripartizione_geografica, codice_regione, codice_nuts2_2006, denominazione_regione_maiuscolo, denominazione_regione, codice_provincia, codice_nuts3_2006, denominazione_provincia, sigla_automobilistica, id_tabella, codice_provincia_numerico) FROM stdin;
+COPY province_italiane_istat (codice_ripartizione, codice_nuts1, ripartizione_geografica_maiuscolo, ripartizione_geografica, codice_regione, codice_nuts2_2006, denominazione_regione_maiuscolo, denominazione_regione, codice_provincia, codice_nuts3_2006, denominazione_provincia, sigla_automobilistica, id_tabella, codice_provincia_numerico) FROM stdin;
 4	ITF	SUD	Sud	13	ITF1	ABRUZZO	Abruzzo	067	ITF12	Teramo	TE	71	67
 4	ITF	SUD	Sud	13	ITF1	ABRUZZO	Abruzzo	068	ITF13	Pescara	PE	72	68
 2	ITD	NORD-EST	Nord-est	08	ITD5	EMILIA-ROMAGNA	Emilia-Romagna	036	ITD54	Modena	MO	42	36
