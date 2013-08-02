@@ -21,7 +21,7 @@ SET default_with_oids = false;
 CREATE TABLE province_italiane_istat (
     codice_ripartizione character varying(15) NOT NULL,
     codice_nuts1 character varying(6) NOT NULL,
-    "ripartizione_geografica_MAIUSCOLO" character varying(15) NOT NULL,
+    ripartizione_geografica_maiuscolo character varying(15) NOT NULL,
     ripartizione_geografica character varying(15) NOT NULL,
     codice_regione character varying(2) NOT NULL,
     codice_nuts2_2006 character varying(6) NOT NULL,
