@@ -17,7 +17,6 @@ Postgres tables structures and data for Regioni,Province and Comuni dumped from 
 
 from BeautifulSoup import BeautifulSoup
 
-"""il windows-1255 è compatibile con il turco (iso-8859-9)"""
 f = open('elenco_ comuni_italiani_30 giugno_2013.iso-8859-9.csv', 'r')
 r = f.readlines()
 f.close()
@@ -26,7 +25,6 @@ l = []
 for i in r:
     l.append(i.decode('iso-8859-9').encode('utf-8'))
 
-"""verifica (incluso lo stdout di ipython) """
 In [18]: a = BeautifulSoup(r[0])
 
 a.originalEncoding
