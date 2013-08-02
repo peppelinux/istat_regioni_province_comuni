@@ -12,12 +12,12 @@ Postgres tables structures and data for Regioni,Province and Comuni dumped from 
 - province's table added a numerical code usefull for FK
 - regioni's table uses a template founded on internet, so the table structure is minimal
 
-appunti python for charset encodings
+#appunti python for charset encodings
 ====================================
 
 from BeautifulSoup import BeautifulSoup
 
-# il windows-1255 è compatibile con il turco (iso-8859-9)
+"""il windows-1255 è compatibile con il turco (iso-8859-9)"""
 f = open('elenco_ comuni_italiani_30 giugno_2013.iso-8859-9.csv', 'r')
 r = f.readlines()
 f.close()
@@ -26,7 +26,7 @@ l = []
 for i in r:
     l.append(i.decode('iso-8859-9').encode('utf-8'))
 
-# verifica (incluso lostdout di ipython)
+"""verifica (incluso lo stdout di ipython) """
 In [18]: a = BeautifulSoup(r[0])
 
 a.originalEncoding
