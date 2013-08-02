@@ -15,25 +15,25 @@ Postgres tables structures and data for Regioni,Province and Comuni dumped from 
 #appunti python for charset encodings
 ====================================
 
-from BeautifulSoup import BeautifulSoup
-
-f = open('elenco_ comuni_italiani_30 giugno_2013.iso-8859-9.csv', 'r')
-r = f.readlines()
-f.close()
-
-l = []
-for i in r:
-    l.append(i.decode('iso-8859-9').encode('utf-8'))
-
-In [18]: a = BeautifulSoup(r[0])
-
-a.originalEncoding
-Out[19]: 'windows-1252'
-
-b = BeautifulSoup(l[0])
-b.originalEncoding
-Out[21]: 'utf-8'
-
-f = open('elenco_ comuni_italiani_30 giugno_2013.utf-8.csv', 'wb')
-f.writelines(l)
-f.close()
+    from BeautifulSoup import BeautifulSoup
+    
+    f = open('elenco_ comuni_italiani_30 giugno_2013.iso-8859-9.csv', 'r')
+    r = f.readlines()
+    f.close()
+    
+    l = []
+    for i in r:
+        l.append(i.decode('iso-8859-9').encode('utf-8'))
+    
+    In [18]: a = BeautifulSoup(r[0])
+    
+    a.originalEncoding
+    Out[19]: 'windows-1252'
+    
+    b = BeautifulSoup(l[0])
+    b.originalEncoding
+    Out[21]: 'utf-8'
+    
+    f = open('elenco_ comuni_italiani_30 giugno_2013.utf-8.csv', 'wb')
+    f.writelines(l)
+    f.close()
